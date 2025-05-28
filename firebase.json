@@ -1,0 +1,46 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "travel-project-7c3ef",
+          "appId": "1:123986867799:android:f942bd23c219e16b519512",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "travel-project-7c3ef",
+          "appId": "1:123986867799:ios:0cc3af29f9239192519512",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "travel-project-7c3ef",
+          "configurations": {
+            "android": "1:123986867799:android:f942bd23c219e16b519512",
+            "ios": "1:123986867799:ios:0cc3af29f9239192519512"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}
