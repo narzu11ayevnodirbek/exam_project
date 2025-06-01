@@ -9,7 +9,7 @@ plugins {
 }
 
 android {
-    namespace = "uz.flutterchi.exam_project"
+    namespace = "com.example.exam_project"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = "27.0.12077973"
 
